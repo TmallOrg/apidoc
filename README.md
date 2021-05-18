@@ -28,13 +28,13 @@
 
 navi_type:
 
-* type_healthBeauty (健康美容)
-* type_education (教育培训)
-* type_tourismAndPension (旅游养老)
-* type_fresh (农业生鲜)
+* CATEGORY_COS (健康美容)
+* CATEGORY_EDU (教育培训)
+* CATEGORY_TRAVEL (旅游养老)
+* CATEGORY_COMMUNITY (农业生鲜)
+* CATEGORY_LIVING (视频直播)
+* CATEGORY_MEDICAL (医疗抗衰)
 * type_eShop (网上商城)
-* type_liveStreaming (视频直播)
-* type_medicalTreatment (医疗抗衰)
 * type_living (跳转到直播)
 * type_video (跳转到视频)
 * type_url (跳转到url)
