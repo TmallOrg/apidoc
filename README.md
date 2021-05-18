@@ -42,88 +42,153 @@ navi_type:
 #### category-1 (一长两短)
 ![](category-1.png)
 
-```
-category-1 
-
-style: category-1 
-{
-	total-title-font-size:20,
-	total-title-font-color:#333333,
-	product-title-font-size:15,
-	product-title-font-color:#FFF,
-	product-price-font-size:#13,
-	product-price-font-color:#FFF,
-	product-marketPrice-font-size:#13,
-	product-marketPrice-font-color:#FFF,
-	product-image-1-w"id"th:50%,
-	product-image-2-w"id"th:25%,
-	product-image-3-w"id"th:25%,
-	product-image-height: 50px
-}
-```
 
 ```
 data
 
-{
-  style: category-1 
-  title:"限时优惠",
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"面部补水，限时优惠",price:"1980",marketPrice:"2000"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"强效补水",price:"1980",marketPrice:"2000"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"强效补水SPA",price:"1980",marketPrice:"2000"},
-  ]
+ {
+	"style": "category-1",
+	"title": "限时优惠",
+	"list": [
+	    {
+	        "id": "1",
+	        "name": "面部补水,限时特惠专区",
+	        "score": 4.0,
+	        "selNum": 100,
+	        "price": 1980,
+	        "commentNum": 2000,
+	        "marketPrice": 2000,
+	        "desp": [],
+	        "imageList": [
+	            "http://112.74.166.59:5000/public/download/16177204704png"
+	        ]
+	    },
+	    {
+	        "id": "2",
+	        "name": "强效补水SPA",
+	        "score": 4.0,
+	        "selNum": 100,
+	        "price": 1980,
+	        "commentNum": 2000,
+	        "marketPrice": 0,
+	        "desp": [],
+	        "imageList": [
+	            "http://112.74.166.59:5000/public/download/16177205361png"
+	        ]
+	    },
+	    {
+	        "id": "3",
+	        "name": "强效补水SPA",
+	        "score": 4.0,
+	        "selNum": 100,
+	        "price": 1980,
+	        "commentNum": 2000,
+	        "marketPrice": 0,
+	        "desp": [],
+	        "imageList": [
+	            "http://112.74.166.59:5000/public/download/16177205923png"
+	        ]
+	    }
+	]
 }
-
 ```
 
 #### category-2 (轮训)
 ![](category-2.png)
 
-```
-style: category-2
-{
-	product-image-height: 50px
-}
-```
+
 ```
 data
 
 {
-  style: category-2
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com/img.png",url:"http://www.ba"id"u.com"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com/img.png",url:"http://www.ba"id"u.com"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com/img.png",url:"http://www.ba"id"u.com"},
-  ]
+    "style": "category-2",
+    "list": [
+        {
+            "nav_type": "type_url",
+            "id": "asdf",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173621200"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "nav_type": "type_url",
+            "id": "asdf",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173621200"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "nav_type": "type_url",
+            "id": "asdf",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173621200"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "nav_type": "type_url",
+            "id": "asdf",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173621200"
+            ],
+            "url": "http://www.baidu.com"
+        }
+    ]
 }
 ```
+
 #### category-3 (无限右滑)
 ![](category-3.png)
 
 ```
-style: category-3
-{
-	product-image-height: 50px,
-	product-image-w"id"th: 50px,
-	product-title-font-size:15,
-	product-title-font-color:#FFF,
-	product-"subtitle"-font-size:15,
-	product-"subtitle"-font-color:#FFF,
-}
-```
-```
 data
-
 {
-  style: category-3
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"面部脂肪填充","subtitle":"1000"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"面部脂肪填充","subtitle":"1000"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"面部脂肪填充","subtitle":"1000"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"面部脂肪填充","subtitle":"1000"},
-  
-  ]
+    "style": "category-3",
+    "title": "热门推荐",
+    "list": [
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "1",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173808403"
+            ],
+            "url": "http://www.baidu.com",
+            "name": "惠州",
+            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
+        },
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "1",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173808403"
+            ],
+            "url": "http://www.baidu.com",
+            "name": "惠州",
+            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
+        },
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "1",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173808403"
+            ],
+            "url": "http://www.baidu.com",
+            "name": "惠州",
+            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
+        },
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "1",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621173808403"
+            ],
+            "url": "http://www.baidu.com",
+            "name": "惠州",
+            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
+        }
+    ]
 }
 ```
 
@@ -132,141 +197,254 @@ data
 
 ![](category-4.png)
 
-```
-style: category-4
-{
-	product-image-height: 50px,
-	product-image-w"id"th: 50%,
-	
-}
-```
+
 ```
 data
 
 {
-  style: category-4
-  title:""
-  goodslist:[
-    {"id":"asdf","imagePath":"http://www.ba"id"u.com/img.png",url:"http://www.ba"id"u.com"}, 
-    {"id":"asdf","imagePath":"http://www.ba"id"u.com/img.png",url:"http://www.ba"id"u.com"},
-  
-  ]
+    "style": "category-4",
+    "title": "",
+    "list": [
+        {
+            "nav_type": "type_url",
+            "id": "1",
+            "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
+            "url": "http://www.baidu.com"
+        },
+        {
+            "nav_type": "type_url",
+            "id": "2",
+            "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
+            "url": "http://www.baidu.com"
+        }
+    ]
 }
 ```
+
 #### category-5 (两短 2)
 ![](category-5.png)
 
-
-```
-style: category-5
-{
-	product-image-height: 50px,
-	product-image-w"id"th: 50px,
-	product-title-font-size:15,
-	product-title-font-color:#FFF,
-	product-"subtitle"-font-size:15,
-	product-"subtitle"-font-color:#FFF,		
-	product-desp-font-size:15,
-	product-desp-font-color:#FFF,		
-}
-```
 ```
 data
 
 {
-  style: category-5,
-  title: 今日特惠
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"特价机票抢购","name":"深圳🛬广州",price:"1000",discout:"5.0"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"特价机票抢购","name":"深圳🛬广州",price:"1000",discout:"5.0"}, 
-  
-  ]
+    "style": "category-5",
+    "title": "今日特惠",
+    "list": [
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "2",
+            "imageList": ["http://www.baidu.com"],
+            "title": "特价机票抢购",
+            "name": "深圳🛬广州",
+            "price": "1000",
+            "discout": "5.0"
+        },
+        {
+            "nav_type": "CATEGORY_TRAVEL",
+            "id": "1",
+            "imageList": [
+                "http://www.baidu.com"
+            ],
+            "title": "特价机票抢购",
+            "name": "深圳🛬广州",
+            "price": "1000",
+            "discout": "5.0"
+        }
+    ]
 }
 ```
 
 #### category-6 (四短-带标题)
 ![](category-6.png)
 
-```
-style: category-6
-{
-	product-image-height: 50px,
-	product-image-w"id"th: 50px,
-	product-title-font-size:15,
-	product-title-font-color:#FFF,
-	product-price-font-size:15,
-	product-price-font-color:#FFF,		
-	product-desp-font-size:15,
-	product-desp-font-color:#FFF,		
-	product-desp-bg-color:#FF000,
-}
-```
+
 
 ```
 {
-  style: category-6,
-  title: 今日特惠
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"特价机票抢购","name":"深圳🛬广州",price:"1000",discout:"5.0"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"深圳🛬广州",price:"1000",desp:"仅剩5件"}, 
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"深圳🛬广州",price:"1000",desp:"仅剩5件"}, 
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"深圳🛬广州",price:"1000",desp:"仅剩5件"}, 
-  
-  ]
+    "style": "category-6",
+    "list": [
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "name": "进口蓝莓",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1616941007514"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "name": "麻辣小龙虾",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/16171169810png"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "name": "肉丁骨牛排",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1616941007514"
+            ],
+            "url": "http://www.baidu.com"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "name": "香甜苹果",
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/16171169810png"
+            ],
+            "url": "http://www.baidu.com"
+        }
+    ]
 }
 ```
 
 #### category-7 (一长带标题)
 ![](category-7.png)
 
-```
-style: category-7
-{
-	product-image-height: 50px,
-	product-left-tag-font-size:15,
-	product-left-tagfont-color:#FFF,
-	product-right-tag-font-size:15,
-	product-right-tag-font-color:#FFF,
-	product-title-font-size:15,
-	product-title-color:#FFF,
-	
-}
-```
+
 
 ```
 {
-  style: category-7,
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"大品牌春季套装试穿",v"id"eoPath:"http://www.ba"id"u.com",visNum:"20",timeDis:"4:00"}  
-  ]
+    "style": "category-7",
+    "list": [
+        {
+            "navi_type": "type_living",
+            "videoList": [
+                {
+                    "id": "1",
+                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
+                    "visNum": "20",
+                    "timeDis": "4:00"
+                }
+            ],
+            "title": "大品牌春季套装试穿直播回放，优雅新美学",
+            "discout": "5.0",
+            "id": "1",
+            "name": "大品牌春季套装试穿",
+            "score": 0.0,
+            "selNum": 0,
+            "price": 0,
+            "commentNum": 2000,
+            "marketPrice": 2000,
+            "desp": [
+            ],
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621125217128"
+            ]
+        },
+        {
+            "navi_type": "type_living",
+            "videoList": [
+                {
+                    "id": "1",
+                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
+                    "visNum": "20",
+                    "timeDis": "4:00"
+                }
+            ],
+            "title": "大品牌春季套装试穿直播回放，优雅新美学",
+            "discout": "5.0",
+            "id": "1",
+            "name": "大品牌春季套装试穿",
+            "score": 0.0,
+            "selNum": 0,
+            "price": 0,
+            "commentNum": 2000,
+            "marketPrice": 2000,
+            "desp": [],
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621125217128"
+            ]
+        },{
+            "navi_type": "type_living",
+            "videoList": [
+                {
+                    "id": "1",
+                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
+                    "visNum": "20",
+                    "timeDis": "4:00"
+                }
+            ],
+            "title": "大品牌春季套装试穿直播回放，优雅新美学",
+            "discout": "5.0",
+            "id": "1",
+            "name": "大品牌春季套装试穿",
+            "score": 0.0,
+            "selNum": 0,
+            "price": 0,
+            "commentNum": 2000,
+            "marketPrice": 2000,
+            "desp": [],
+            "imageList": [
+                "http://112.74.166.59:5000/public/download/1621125217128"
+            ]
+        }
+    ]
 }
-
 ```
 #### category-8 (两短-带标题)
 ![](category-8.png)
 
-```
-style: category-8
-{
-	product-image-height: 50px,
-	product-left-tag-font-size:15,
-	product-left-tagfont-color:#FFF,
-	product-right-tag-font-size:15,
-	product-right-tag-font-color:#FFF,
-	product-title-font-size:15,
-	product-title-color:#FFF,
-	
-}
-```
 
 ```
 {
-  style: category-8,
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"大品牌春季套装试穿",v"id"eoPath:"http://www.ba"id"u.com",visNum:"20",timeDis:"4:00"},
-   {"id":"asdf","imagePath":"http://www.ba"id"u.com",title:"大品牌春季套装试穿",v"id"eoPath:"http://www.ba"id"u.com",visNum:"20",timeDis:"4:00"},
-  ]
-}
+	"style": "category-8",
+	"list": [
+	    {   "navi_type":"type_video",
+	        "videoList": [
+	            {
+	                "id": "1",
+	                "url": "http://112.74.166.59:5000/public/video/test.MP4",
+	                "visNum": "20",
+	                "timeDis": "4:00"
+	            }
+	        ],
+	        "title": "大品牌春季套装试穿直播回放，优雅新美学",
+	        "discout": "5.0",
+	        "id": "1",
+	        "name": "大品牌春季套装试穿",
+	        "score": 0.0,
+	        "selNum": 0,
+	        "price": 0,
+	        "commentNum": 2000,
+	        "marketPrice": 2000,
+	        "desp": [],
+	        "imageList": [
+	            "http://112.74.166.59:5000/public/download/1621125217128"
+	        ]
+	    },
+	    {
+	        "navi_type": "type_video",
+	        "videoList": [
+	            {
+	                "id": "1",
+	                "url": "http://112.74.166.59:5000/public/video/test.MP4",
+	                "visNum": "20",
+	                "timeDis": "4:00"
+	            }
+	        ],
+	        "title": "大品牌春季套装试穿直播回放，优雅新美学",
+	        "discout": "5.0",
+	        "id": "1",
+	        "name": "大品牌春季套装试穿",
+	        "score": 0.0,
+	        "selNum": 0,
+	        "price": 0,
+	        "commentNum": 2000,
+	        "marketPrice": 2000,
+	        "desp": [],
+	        "imageList": [
+	            "http://112.74.166.59:5000/public/download/1621125217128"
+	        ]
+	    }
+	]
+	}
 
 ```
 
@@ -275,32 +453,56 @@ style: category-8
 ![](category-9.png)
 
 ```
-style: category-9
 {
-	product-image-height: 50px,
-	product-image-w"id"th: 50px,
-	product-title-font-size:15,
-	product-title-font-color:#FFF,
-	product-price-font-size:15,
-	product-price-font-color:#FFF,		
-	product-desp-font-size:15,
-	product-desp-font-color:#FFF,		
-	product-desp-bg-color:#FF000,
-}
-```
-
-```
-{
-  style: category-9,
-  title: 优选商家,
-  tags:["全部","蔬菜","水果"]
-  goodslist:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙新鲜", desp:"新用户减100"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙新鲜", desp:"新用户减100"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙新鲜", desp:"新用户减100"},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙新鲜", desp:"新用户减100"},
-  
-  ]
+    "style": "category-9",
+    "tags": [
+        {
+            "id": "asdf",
+            "name": "全部"
+        },
+        {
+            "id": "asdf",
+            "name": "蔬菜"
+        },
+        {
+            "id": "asdf",
+            "name": "水果"
+        },
+        {
+            "id": "asdf",
+            "name": "粮油"
+        }
+    ],
+    "goodlist": [
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "imagePath": "http://www.baidu.com",
+            "name": "同芙农业生鲜",
+            "desp": "新用户减198"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "imagePath": "http://www.baidu.com",
+            "name": "同芙农业生鲜",
+            "desp": "新用户减198"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "imagePath": "http://www.baidu.com",
+            "name": "同芙农业生鲜",
+            "desp": "新用户减198"
+        },
+        {
+            "navi_type": "CATEGORY_COMMUNITY",
+            "id": "asdf",
+            "imagePath": "http://www.baidu.com",
+            "name": "同芙农业生鲜",
+            "desp": "新用户减198"
+        }
+    ]
 }
 ```
 
