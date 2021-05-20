@@ -58,154 +58,12 @@
 ![](category-1.png)
 
 
-```
-data
-
- {
-	"style": "category-1",
-	"title": "限时优惠",
-	"list": [
-	    {
-	        "id": "1",
-	        "name": "面部补水,限时特惠专区",
-	        "score": 4.0,
-	        "selNum": 100,
-	        "price": 1980,
-	        "commentNum": 2000,
-	        "marketPrice": 2000,
-	        "desp": [],
-	        "imageList": [
-	            "http://112.74.166.59:5000/public/download/16177204704png"
-	        ]
-	    },
-	    {
-	        "id": "2",
-	        "name": "强效补水SPA",
-	        "score": 4.0,
-	        "selNum": 100,
-	        "price": 1980,
-	        "commentNum": 2000,
-	        "marketPrice": 0,
-	        "desp": [],
-	        "imageList": [
-	            "http://112.74.166.59:5000/public/download/16177205361png"
-	        ]
-	    },
-	    {
-	        "id": "3",
-	        "name": "强效补水SPA",
-	        "score": 4.0,
-	        "selNum": 100,
-	        "price": 1980,
-	        "commentNum": 2000,
-	        "marketPrice": 0,
-	        "desp": [],
-	        "imageList": [
-	            "http://112.74.166.59:5000/public/download/16177205923png"
-	        ]
-	    }
-	]
-}
-```
-
 #### category-2 (轮训)
 ![](category-2.png)
-
-
-```
-data
-
-{
-    "style": "category-2",
-    "list": [
-        {
-            "nav_type": "type_url",
-            "id": "asdf",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173621200"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "nav_type": "type_url",
-            "id": "asdf",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173621200"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "nav_type": "type_url",
-            "id": "asdf",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173621200"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "nav_type": "type_url",
-            "id": "asdf",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173621200"
-            ],
-            "url": "http://www.baidu.com"
-        }
-    ]
-}
-```
 
 #### category-3 (无限右滑)
 ![](category-3.png)
 
-```
-data
-{
-    "style": "category-3",
-    "title": "热门推荐",
-    "list": [
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "1",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173808403"
-            ],
-            "url": "http://www.baidu.com",
-            "name": "惠州",
-            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
-        },
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "1",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173808403"
-            ],
-            "url": "http://www.baidu.com",
-            "name": "惠州",
-            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
-        },
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "1",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173808403"
-            ],
-            "url": "http://www.baidu.com",
-            "name": "惠州",
-            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
-        },
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "1",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621173808403"
-            ],
-            "url": "http://www.baidu.com",
-            "name": "惠州",
-            "subtitle": "双月湾双月湾双月湾双月湾双月湾"
-        }
-    ]
-}
-```
 
 
 #### category-4 (两短)
@@ -213,311 +71,240 @@ data
 ![](category-4.png)
 
 
-```
-data
-
-{
-    "style": "category-4",
-    "title": "",
-    "list": [
-        {
-            "nav_type": "type_url",
-            "id": "1",
-            "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
-            "url": "http://www.baidu.com"
-        },
-        {
-            "nav_type": "type_url",
-            "id": "2",
-            "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
-            "url": "http://www.baidu.com"
-        }
-    ]
-}
-```
-
 #### category-5 (两短 2)
 ![](category-5.png)
 
-```
-data
-
-{
-    "style": "category-5",
-    "title": "今日特惠",
-    "list": [
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "2",
-            "imageList": ["http://www.baidu.com"],
-            "title": "特价机票抢购",
-            "name": "深圳🛬广州",
-            "price": "1000",
-            "discout": "5.0"
-        },
-        {
-            "nav_type": "CATEGORY_TRAVEL",
-            "id": "1",
-            "imageList": [
-                "http://www.baidu.com"
-            ],
-            "title": "特价机票抢购",
-            "name": "深圳🛬广州",
-            "price": "1000",
-            "discout": "5.0"
-        }
-    ]
-}
-```
 
 #### category-6 (四短-带标题)
 ![](category-6.png)
 
 
-
-```
-{
-    "style": "category-6",
-    "list": [
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "name": "进口蓝莓",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1616941007514"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "name": "麻辣小龙虾",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/16171169810png"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "name": "肉丁骨牛排",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1616941007514"
-            ],
-            "url": "http://www.baidu.com"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "name": "香甜苹果",
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/16171169810png"
-            ],
-            "url": "http://www.baidu.com"
-        }
-    ]
-}
-```
-
 #### category-7 (一长带标题)
 ![](category-7.png)
 
 
-
-```
-{
-    "style": "category-7",
-    "list": [
-        {
-            "navi_type": "type_living",
-            "videoList": [
-                {
-                    "id": "1",
-                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
-                    "visNum": "20",
-                    "timeDis": "4:00"
-                }
-            ],
-            "title": "大品牌春季套装试穿直播回放，优雅新美学",
-            "discout": "5.0",
-            "id": "1",
-            "name": "大品牌春季套装试穿",
-            "score": 0.0,
-            "selNum": 0,
-            "price": 0,
-            "commentNum": 2000,
-            "marketPrice": 2000,
-            "desp": [
-            ],
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621125217128"
-            ]
-        },
-        {
-            "navi_type": "type_living",
-            "videoList": [
-                {
-                    "id": "1",
-                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
-                    "visNum": "20",
-                    "timeDis": "4:00"
-                }
-            ],
-            "title": "大品牌春季套装试穿直播回放，优雅新美学",
-            "discout": "5.0",
-            "id": "1",
-            "name": "大品牌春季套装试穿",
-            "score": 0.0,
-            "selNum": 0,
-            "price": 0,
-            "commentNum": 2000,
-            "marketPrice": 2000,
-            "desp": [],
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621125217128"
-            ]
-        },{
-            "navi_type": "type_living",
-            "videoList": [
-                {
-                    "id": "1",
-                    "url": "http://112.74.166.59:5000/public/video/test.MP4",
-                    "visNum": "20",
-                    "timeDis": "4:00"
-                }
-            ],
-            "title": "大品牌春季套装试穿直播回放，优雅新美学",
-            "discout": "5.0",
-            "id": "1",
-            "name": "大品牌春季套装试穿",
-            "score": 0.0,
-            "selNum": 0,
-            "price": 0,
-            "commentNum": 2000,
-            "marketPrice": 2000,
-            "desp": [],
-            "imageList": [
-                "http://112.74.166.59:5000/public/download/1621125217128"
-            ]
-        }
-    ]
-}
-```
 #### category-8 (两短-带标题)
 ![](category-8.png)
 
-
-```
-{
-	"style": "category-8",
-	"list": [
-	    {   "navi_type":"type_video",
-	        "videoList": [
-	            {
-	                "id": "1",
-	                "url": "http://112.74.166.59:5000/public/video/test.MP4",
-	                "visNum": "20",
-	                "timeDis": "4:00"
-	            }
-	        ],
-	        "title": "大品牌春季套装试穿直播回放，优雅新美学",
-	        "discout": "5.0",
-	        "id": "1",
-	        "name": "大品牌春季套装试穿",
-	        "score": 0.0,
-	        "selNum": 0,
-	        "price": 0,
-	        "commentNum": 2000,
-	        "marketPrice": 2000,
-	        "desp": [],
-	        "imageList": [
-	            "http://112.74.166.59:5000/public/download/1621125217128"
-	        ]
-	    },
-	    {
-	        "navi_type": "type_video",
-	        "videoList": [
-	            {
-	                "id": "1",
-	                "url": "http://112.74.166.59:5000/public/video/test.MP4",
-	                "visNum": "20",
-	                "timeDis": "4:00"
-	            }
-	        ],
-	        "title": "大品牌春季套装试穿直播回放，优雅新美学",
-	        "discout": "5.0",
-	        "id": "1",
-	        "name": "大品牌春季套装试穿",
-	        "score": 0.0,
-	        "selNum": 0,
-	        "price": 0,
-	        "commentNum": 2000,
-	        "marketPrice": 2000,
-	        "desp": [],
-	        "imageList": [
-	            "http://112.74.166.59:5000/public/download/1621125217128"
-	        ]
-	    }
-	]
-	}
-
-```
 
 
 #### category-9 (无限右滑+分类)
 ![](category-9.png)
 
 ```
-{
-    "style": "category-9",
-    "tags": [
-        {
-            "id": "asdf",
-            "name": "全部"
-        },
-        {
-            "id": "asdf",
-            "name": "蔬菜"
-        },
-        {
-            "id": "asdf",
-            "name": "水果"
-        },
-        {
-            "id": "asdf",
-            "name": "粮油"
-        }
-    ],
-    "goodlist": [
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "imagePath": "http://www.baidu.com",
-            "name": "同芙农业生鲜",
-            "desp": "新用户减198"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "imagePath": "http://www.baidu.com",
-            "name": "同芙农业生鲜",
-            "desp": "新用户减198"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "imagePath": "http://www.baidu.com",
-            "name": "同芙农业生鲜",
-            "desp": "新用户减198"
-        },
-        {
-            "navi_type": "CATEGORY_COMMUNITY",
-            "id": "asdf",
-            "imagePath": "http://www.baidu.com",
-            "name": "同芙农业生鲜",
-            "desp": "新用户减198"
-        }
-    ]
+
+    "category-1": {
+        "nav_type": "CATEGORY_EDU_PRO_DETAIL",
+        "title": "国际形象设计名师班",
+        "discout": "",
+        "id": "1",
+        "name": "国际形象设计名师班",
+        "score": 4.0,
+        "selNum": 100,
+        "price": 1980,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [
+            "课程形式：小班授课",
+            "适用阶段:宁基础入门"
+        ],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ]
+    },
+```
+
+```
+    "category-2": {
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL",
+        "id": "asdf",
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1621173621200"
+        ],
+        "url": "http://www.baidu.com"
+    },
+```
+
+```
+    "category-3": {
+        "id": "asdfaefasdfasdf",
+        "name": "0基础培训课程",
+        "score": 4.0,
+        "selNum": 100,
+        "price": 1980,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [
+            "课程形式：小班授课",
+            "适用阶段:宁基础入门"
+        ],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    }
+
+```
+
+```
+    "category-4": {
+        "nav_type": "type_url",
+        "id": "1",
+        "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
+        "url": "http://www.baidu.com"
+    },
+```
+
+```
+    "category-5": {
+        "title": "特价机票抢购",
+        "discout": "5.0",
+        "id": "asdfaefasdfasdf",
+        "name": "0基础培训课程",
+        "score": 4.0,
+        "selNum": 100,
+        "price": 1980,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [
+            "课程形式：小班授课",
+            "适用阶段:宁基础入门"
+        ],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    },
+    
+```
+
+```
+    "category-6": {
+        "title": "特价机票抢购",
+        "discout": "5.0",
+        "id": "asdfaefasdfasdf",
+        "name": "0基础培训课程",
+        "score": 4.0,
+        "selNum": 100,
+        "price": 1980,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [
+            "课程形式：小班授课",
+            "适用阶段:宁基础入门"
+        ],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    },
+    
+```
+
+```
+    "category-7": {
+        "videoList": [
+            {
+                "id": "1",
+                "url": "http://112.74.166.59:5000/public/video/test.MP4",
+                "visNum": "20",
+                "timeDis": "4:00"
+            }
+        ],
+        "title": "大品牌春季套装试穿直播回放，优雅新美学",
+        "discout": "5.0",
+        "id": "1",
+        "name": "大品牌春季套装试穿",
+        "score": 0.0,
+        "selNum": 0,
+        "price": 0,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1621125217128"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    }
+```
+
+```
+    "category-8": {
+        "videoList": [
+            {
+                "id": "1",
+                "url": "http://112.74.166.59:5000/public/video/test.MP4",
+                "visNum": "20",
+                "timeDis": "4:00"
+            }
+        ],
+        "title": "大品牌春季套装试穿直播回放，优雅新美学",
+        "discout": "5.0",
+        "id": "1",
+        "name": "大品牌春季套装试穿",
+        "score": 0.0,
+        "selNum": 0,
+        "price": 0,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1621125217128"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    }
+
+```
+
+```
+    "category-9": {
+        "videoList": [
+            {
+                "id": "asdfaefasdfasdf",
+                "url": "http://www.baidu.com",
+                "visNum": "20",
+                "timeDis": "4:00"
+            },
+            {
+                "id": "asdfaefasdfasdf",
+                "url": "http://www.baidu.com",
+                "visNum": "20",
+                "timeDis": "4:00"
+            }
+        ],
+        "title": "特价机票抢购",
+        "discout": "5.0",
+        "id": "asdfaefasdfasdf",
+        "name": "0基础培训课程",
+        "score": 4.0,
+        "selNum": 100,
+        "price": 1980,
+        "commentNum": 2000,
+        "marketPrice": 2000,
+        "desp": [
+            "课程形式：小班授课",
+            "适用阶段:宁基础入门"
+        ],
+        "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ],
+        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
+    }
 }
 ```
 
@@ -529,85 +316,145 @@ data
 ##### style 2
 ![](footer-2.png)
 
-```
-style：footer-1
-{
-
-}
-```
-```
-{
-  "id":asdfasefasdf,
-  style: footer-1,
-  title: 优选商家,
-  tags:[{"id":"asdf“,"name":"理我最近"},{"id":"asdf“,"name":"优选好评"},{"id":"asdf“,"name":"口碑优先"}]
-  list:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", commonNum:"2800评论", dis:"2.0公里", price:"1980起",discountlist:["新用户减100","满100减50"],tag"name":"项目",taglist:["日常护理","医学美容","面部补水"]},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", commonNum:"2800评论", dis:"2.0公里", price:"1980起",discountlist:["新用户减100","满100减50"],tag"name":"项目",taglist:["日常护理","医学美容","面部补水"]},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", commonNum:"2800评论", dis:"2.0公里", price:"1980起",discountlist:["新用户减100","满100减50"],tag"name":"项目",taglist:["日常护理","医学美容","面部补水"]},
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", commonNum:"2800评论", dis:"2.0公里", price:"1980起",discountlist:["新用户减100","满100减50"],tag"name":"项目",taglist:[{"name":"日常护理",price:"0.0"},{"name":"医学美容",price:"0.0"},{"name":"面部补水",price:"0.0"}]}
-  ]
-}
-
-```
 #### footer-2 (瀑布流)
 ![](footer-3.png)
 
-
-```
- "id":asdfasefasdf,
-  style: footer-2,
-  title: 优选商家,
-  tags:[{"id":"asdf“,"name":"理我最近"},{"id":"asdf“,"name":"优选好评"},{"id":"asdf“,"name":"口碑优先"}]
-  list:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200, price:"1980起",discountlist:["新用户减100","满100减50"]},{"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200, price:"1980起",discountlist:["新用户减100","满100减50"]},{"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200, price:"1980起",discountlist:["新用户减100","满100减50"]},{"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200, price:"1980起",discountlist:["新用户减100","满100减50"]},
-  ]
-
-
-```
 #### footer-3 ()
 ![](footer-6.png)
 
-```
- "id":asdfasefasdf,
-  style: footer-3,
-  title: 优选商家,
-  tags:[{"id":"asdf“,"name":"理我最近"},{"id":"asdf“,"name":"优选好评"},{"id":"asdf“,"name":"口碑优先"}]
-  list:[
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200,leftTag:"1280"} ,
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁", rightTag:"月售899", w"id"th:"0.5",height:200,leftTag:"1280"}  ]
-```
 
 #### footer-4 (带头像)
 ![](footer-7.png)
 
 ```
- "id":asdfasefasdf,
-  style: footer-4,
-  title: 案例分享,
-    list:[
-  {
-  "id":"asdf",
-  "imagePath":"http://www.ba"id"u.com",
-  "name":"同芙美容连锁",subModule:
-  {
-                "id": "asdfaefasdfasdf",
-                ""name"": "张萌",
-                "title": "主任医师",
-                "desp": "50年工作经验",
-                ""imagePath"": "http://112.74.166.59:5000/public/download/1616941007514"
-            },
-  {"id":"asdf","imagePath":"http://www.ba"id"u.com","name":"同芙美容连锁",subModule:
-  {
-                "id": "asdfaefasdfasdf",
-                ""name"": "张萌",
-                "title": "主任医师",
-                "desp": "50年工作经验",
-                ""imagePath"": "http://112.74.166.59:5000/public/download/1616941007514"
-            }  ]
+"footer-1": {
+    "title": "特价机票抢购",
+    "discout": "5.0",
+    "id": "asdfaefasdfasdf",
+    "name": "0基础培训课程",
+    "score": 4.0,
+    "selNum": 100,
+    "commentNum": 2000,
+    "marketPrice": 2000,
+    "imageList": [
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514"
+    ],
+    "commonNum": "2800评论",
+    "dis": "2.0公里",
+    "price": "1980起",
+    "discountlist": [
+        "新用户减100",
+        "满100减50"
+    ],
+    "tagName": "项目",
+    "taglist": [
+        "日常护理",
+        "医学美容",
+        "面部补水"
+    ],
+    "nav_type": "CATEGORY_MEDICAL_SHOP_DETAIL"
+},
+
 ```
 
+```
+"footer-3": {
+    "id": "asdf",
+    "imagePath": "http://www.baidu.com",
+    "name": "同芙美容连锁",
+    "rightTag": "月售899",
+    "width": "0.5",
+    "height": 200,
+    "leftTag": "1280",
+    "nav_type": "CATEGORY_MEDICAL_SHOP_DETAIL"
+},
+```
 
+```
+"footer-2": {
+    "title": "旅游旅游",
+    "discout": "5.0",
+    "imageList": [
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514"
+    ],
+    "id": "asdf",
+    "imagePath": "http://112.74.166.59:5000/public/download/1616941007514",
+    "name": "旅游旅游",
+    "commonNum": "2800评论",
+    "score": 4.0,
+    "selNum": 100,
+    "commentNum": 2000,
+    "marketPrice": 2000,
+    "dis": "2.0公里",
+    "price": "1980起",
+    "discountlist": [
+        "新用户减100",
+        "满100减50"
+    ],
+    "tagName": "项目",
+    "taglist": [
+        "旅游旅游"
+    ],
+    "nav_type": "CATEGORY_TRAVEL_SHOP_DETAIL"
+},
+```
+
+```
+"footer-4": {
+    "nav_type": "CATEGORY_MEDICAL_SHOP_DETAIL",
+    "expert": {
+        "id": "7",
+        "name": "张萌",
+        "title": "主任医师",
+        "desp": "50年工作经验",
+        "colNum": 2600,
+        "skilltags": [
+            "脸部SPA",
+            "颈部按摩"
+        ],
+        "serviceNum": 2600,
+        "consultNum": 2600,
+        "proNum": 2600,
+        "cert": "同芙健康美容连锁会员店",
+        "imagePath": "http://112.74.166.59:5000/public/download/16177227781png"
+    },
+    "title": "教育教育",
+    "discout": "5.0",
+    "imageList": [
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514",
+        "http://112.74.166.59:5000/public/download/1616941007514"
+    ],
+    "id": "asdf",
+    "imagePath": "http://112.74.166.59:5000/public/download/1616941007514",
+    "name": "教育教育",
+    "commonNum": "2800评论",
+    "collNum": "1400",
+    "score": 4.0,
+    "selNum": 100,
+    "commentNum": 2000,
+    "marketPrice": 2000,
+    "dis": "2.0公里",
+    "price": "1980起",
+    "discountlist": [
+        "新用户减100",
+        "满100减50"
+    ],
+    "tagName": "项目",
+    "taglist": [
+        "教育教育",
+        "医学美容",
+        "面部补水"
+    ]
+}
+```
 # Search Cell Style
 ## cell-1
 ![](cell1.png)
