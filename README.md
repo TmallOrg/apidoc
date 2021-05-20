@@ -22,11 +22,7 @@
 ![](body-4.png)
 ![](body-5.png)
 
-
-### body细分样式：
-### list:[productDetail]
-
-navi_type:
+## navi_type(首页共用，body,header):
 
 * CATEGORY_COS_PRO_DETAIL (健康美容-商品详情)
 * CATEGORY_COS_SHOP_DETAIL (健康美容-商店详情)
@@ -52,6 +48,11 @@ navi_type:
 * type_living (跳转到直播)
 * type_video (跳转到视频)
 * type_url (跳转到url)
+
+### body细分样式：
+### list:[productDetail]
+
+
 
 #### category-1 (一长两短)
 ![](category-1.png)
