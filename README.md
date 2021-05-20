@@ -28,12 +28,26 @@
 
 navi_type:
 
-* CATEGORY_COS (健康美容)
-* CATEGORY_EDU (教育培训)
-* CATEGORY_TRAVEL (旅游养老)
-* CATEGORY_COMMUNITY (农业生鲜)
+* CATEGORY_COS_PRO_DETAIL (健康美容-商品详情)
+* CATEGORY_COS_SHOP_DETAIL (健康美容-商店详情)
+* CATEGORY_COS_EXPERT_DETAIL (健康美容-专家详情)
+
+* CATEGORY_EDU_PRO_DETAIL (教育培训-服务详情)
+* CATEGORY_EDU_SHOP_DETAIL (教育培训-机构详情)
+* CATEGORY_EDU_EXPERT_DETAIL (教育培训-专家详情)
+
+* CATEGORY_TRAVEL_PRO_DETAIL (旅游养老-服务)
+* CATEGORY_TRAVEL_SHOP_DETAIL (旅游养老-机构)
+* CATEGORY_TRAVEL_EXPERT_DETAIL (旅游养老-专家详情)
+
+* CATEGORY_COMMUNITY_PRO_DETAIL (农业生鲜)
+* CATEGORY_COMMUNITY_SHOP_DETAIL (农业生鲜)
+
+* CATEGORY_MEDICAL_PRO_DETAIL  (医疗抗衰-服务)
+* CATEGORY_MEDICAL_SHOP_DETAIL  (医疗抗衰-机构)
+* CATEGORY_MEDICAL_EXPERT_DETAIL  (医疗抗衰-专家详情)
+
 * CATEGORY_LIVING (视频直播)
-* CATEGORY_MEDICAL (医疗抗衰)
 * type_eShop (网上商城)
 * type_living (跳转到直播)
 * type_video (跳转到视频)
