@@ -630,25 +630,27 @@ kbd {
 
 <h4 id="toc_19">footer-1 (带tag-cell-tag)</h4>
 
-<h5 id="toc_20">style 1</h5>
-
 <p><img src="footer-1.png" alt=""></p>
 
-<h5 id="toc_21">style 2</h5>
-
-<p><img src="footer-2.png" alt=""></p>
-
-<h4 id="toc_22">footer-2 (瀑布流)</h4>
+<h4 id="toc_20">footer-2 (瀑布流)</h4>
 
 <p><img src="footer-3.png" alt=""></p>
 
-<h4 id="toc_23">footer-3 ()</h4>
+<h4 id="toc_21">footer-3 ()</h4>
 
 <p><img src="footer-6.png" alt=""></p>
 
-<h4 id="toc_24">footer-4 (带头像)</h4>
+<h4 id="toc_22">footer-4 (带头像)</h4>
 
 <p><img src="footer-7.png" alt=""></p>
+
+<h4 id="toc_23">footer-5 (带头像)</h4>
+
+<p><img src="footer-2.png" alt=""></p>
+
+<h4 id="toc_24">footer-6 (带头像)</h4>
+
+<p><img src="cell3.png" alt=""></p>
 
 <div><pre><code class="language-none">&quot;footer-1&quot;: {
     &quot;title&quot;: &quot;特价机票抢购&quot;,
@@ -680,6 +682,47 @@ kbd {
     ],
     &quot;nav_type&quot;: &quot;CATEGORY_MEDICAL_SHOP_DETAIL&quot;
 },
+</code></pre></div>
+
+<div><pre><code class="language-none">&quot;footer-5&quot;: {
+   {
+         &quot;nav_type&quot;: &quot;CATEGORY_MEDICAL_SHOP_DETAIL&quot;,
+         &quot;title&quot;: &quot;特价机票抢购&quot;,
+         &quot;discout&quot;: &quot;5.0&quot;,
+         &quot;imageList&quot;: [
+            &quot;http://112.74.166.59:5000/public/download/1616941007514&quot;,
+            &quot;http://112.74.166.59:5000/public/download/1616941007514&quot;,
+            &quot;http://112.74.166.59:5000/public/download/1616941007514&quot;,
+            &quot;http://112.74.166.59:5000/public/download/1616941007514&quot;
+         ],
+         &quot;id&quot;: &quot;asdf&quot;,
+         &quot;imagePath&quot;: &quot;http://112.74.166.59:5000/public/download/1616941007514&quot;,
+         &quot;name&quot;: &quot;同芙美容连锁&quot;,
+         &quot;commonNum&quot;: &quot;2800评论&quot;,
+         &quot;score&quot;: 4.0,
+         &quot;selNum&quot;: 100,
+         &quot;commentNum&quot;: 2000,
+         &quot;marketPrice&quot;: 2000,
+         &quot;dis&quot;: &quot;2.0公里&quot;,
+         &quot;price&quot;: &quot;1980起&quot;,
+         &quot;discountlist&quot;: [
+            &quot;新用户减100&quot;,
+            &quot;满100减50&quot;
+         ],
+        &quot;sub&quot;: [
+            {
+                &quot;id&quot;: &quot;123&quot;,
+                &quot;name&quot;: &quot;sdf&quot;,
+                &quot;price&quot;: 100
+            }
+        ],
+         &quot;tagName&quot;: &quot;项目&quot;,
+         &quot;taglist&quot;: [
+            &quot;日常护理&quot;,
+            &quot;医学美容&quot;,
+            &quot;面部补水&quot;
+         ]
+      }},
 </code></pre></div>
 
 <div><pre><code class="language-none">&quot;footer-3&quot;: {
@@ -774,19 +817,11 @@ kbd {
 
 <h1 id="toc_25">Search Cell Style</h1>
 
-<h2 id="toc_26">cell-1</h2>
+<h2 id="toc_26">与home-footer保持一致 （footer-1,footer-2...）</h2>
 
-<p><img src="cell1.png" alt=""></p>
+<p><img src="./cell-3.png" alt=""></p>
 
-<h2 id="toc_27">cell-2</h2>
-
-<p><img src="cell2.png" alt=""></p>
-
-<h2 id="toc_28">cell-3</h2>
-
-<p><img src="cell3.png" alt=""></p>
-
-<h3 id="toc_29">特别注意：</h3>
+<h3 id="toc_27">特别注意：</h3>
 
 <p>1.搜索商店时候：
 shop 
@@ -878,102 +913,102 @@ category/searchshop</p>
 }
 </code></pre></div>
 
-<h1 id="toc_30">API 描述：</h1>
+<h1 id="toc_28">API 描述：</h1>
 
-<h2 id="toc_31">首页：</h2>
+<h2 id="toc_29">首页：</h2>
 
 <p><img src="first-level.png" alt="">
 <img src="home-exa.png" alt=""></p>
 
-<h3 id="toc_32">红色部分： /tf/category/home</h3>
+<h3 id="toc_30">红色部分： /tf/category/home</h3>
 
-<h3 id="toc_33">红色部分-cell 更多： /tf/category/home-category</h3>
+<h3 id="toc_31">红色部分-cell 更多： /tf/category/home-category</h3>
 
-<h3 id="toc_34">绿色部分：/tf/category/home-footer</h3>
+<h3 id="toc_32">绿色部分：/tf/category/home-footer</h3>
 
 <hr>
 
-<h2 id="toc_35">商店详情</h2>
+<h2 id="toc_33">商店详情</h2>
 
 <p><img src="shop-detail.png" alt=""></p>
 
-<h3 id="toc_36">tf/category/shop</h3>
+<h3 id="toc_34">tf/category/shop</h3>
 
 <hr>
 
-<h2 id="toc_37">机构详情</h2>
+<h2 id="toc_35">机构详情</h2>
 
 <p><img src="shop-detail-sep.png" alt=""></p>
 
-<h3 id="toc_38">/tf/category/shopDetail</h3>
+<h3 id="toc_36">/tf/category/shopDetail</h3>
 
 <hr>
 
-<h2 id="toc_39">购物车分类</h2>
+<h2 id="toc_37">购物车分类</h2>
 
 <p><img src="shop-card-all.png" alt=""></p>
 
-<h3 id="toc_40">红色部分：/tf/category/shopMenu</h3>
+<h3 id="toc_38">红色部分：/tf/category/shopMenu</h3>
 
-<h3 id="toc_41">绿色部分：/tf/category/shopAll</h3>
+<h3 id="toc_39">绿色部分：/tf/category/shopAll</h3>
 
 <hr>
 
-<h2 id="toc_42">专家详情：</h2>
+<h2 id="toc_40">专家详情：</h2>
 
 <p><img src="exp-detail.png" alt=""></p>
 
-<h3 id="toc_43">/tf/category/expert</h3>
+<h3 id="toc_41">/tf/category/expert</h3>
 
 <hr>
 
 <p><img src="pro-d.png" alt=""></p>
 
-<h3 id="toc_44">/tf/category/productDetail</h3>
+<h3 id="toc_42">/tf/category/productDetail</h3>
 
 <hr>
 
-<h2 id="toc_45">各种推荐专用接口(用于各种详情下面的推荐)</h2>
+<h2 id="toc_43">各种推荐专用接口(用于各种详情下面的推荐)</h2>
 
-<h3 id="toc_46">/tf/category/productRecommend</h3>
+<h3 id="toc_44">/tf/category/productRecommend</h3>
 
-<h2 id="toc_47">评论专用接口(用于更多评论)</h2>
+<h2 id="toc_45">评论专用接口(用于更多评论)</h2>
 
-<h3 id="toc_48">/tf/category/productCommend</h3>
+<h3 id="toc_46">/tf/category/productCommend</h3>
 
-<h2 id="toc_49">筛选</h2>
+<h2 id="toc_47">筛选</h2>
 
 <p><img src="search.png" alt=""></p>
 
 <p><img src="search-type2.png" alt=""></p>
 
-<h3 id="toc_50">/tf/category/searchType 包括排序和筛选(可多选)，头部分类（图片可以无）</h3>
+<h3 id="toc_48">/tf/category/searchType 包括排序和筛选(可多选)，头部分类（图片可以无）</h3>
 
-<h3 id="toc_51">搜索商店 /tf/category/searchshop</h3>
+<h3 id="toc_49">搜索商店 /tf/category/searchshop</h3>
 
-<h3 id="toc_52">搜索商品 /tf/category/searchshop</h3>
+<h3 id="toc_50">搜索商品 /tf/category/searchshop</h3>
 
-<h2 id="toc_53">服务</h2>
+<h2 id="toc_51">服务</h2>
 
-<h3 id="toc_54">预约服务详情 /category/service/schedule</h3>
+<h3 id="toc_52">预约服务详情 /category/service/schedule</h3>
 
-<h3 id="toc_55">schedule, list两个对应两种不同的UI, schedule的优先级会更高</h3>
+<h3 id="toc_53">schedule, list两个对应两种不同的UI, schedule的优先级会更高</h3>
 
 <div><pre><code class="language-none"> &quot;schedule&quot;:[],##当 schedule = 5-1 的时候会出现
  &quot;list&quot;:[],
  &quot;dsp&quot;:&quot;预期说声哈&quot;</code></pre></div>
 
-<h5 id="toc_56">读取 schedule 字段</h5>
+<h5 id="toc_54">读取 schedule 字段</h5>
 
 <p><img src="service-1.png" alt=""></p>
 
-<h5 id="toc_57">读取 list 字段</h5>
+<h5 id="toc_55">读取 list 字段</h5>
 
 <p><img src="service-2.png" alt=""></p>
 
 <hr>
 
-<h3 id="toc_58">我的-预约列表 /category/service/list</h3>
+<h3 id="toc_56">我的-预约列表 /category/service/list</h3>
 
 <div><pre><code class="language-none">(全部)APPOINT_ALL, 
 (预约到店)SERVICE_OFFLINE, 

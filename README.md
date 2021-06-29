@@ -310,11 +310,8 @@
 
 ### footer:
 #### footer-1 (带tag-cell-tag)
-##### style 1
 ![](footer-1.png)
 
-##### style 2
-![](footer-2.png)
 
 #### footer-2 (瀑布流)
 ![](footer-3.png)
@@ -325,6 +322,13 @@
 
 #### footer-4 (带头像)
 ![](footer-7.png)
+
+#### footer-5 (带头像)
+![](footer-2.png)
+
+#### footer-6 (带头像)
+![](cell3.png)
+
 
 ```
 "footer-1": {
@@ -359,6 +363,51 @@
 },
 
 ```
+
+```
+"footer-5": {
+   {
+         "nav_type": "CATEGORY_MEDICAL_SHOP_DETAIL",
+         "title": "特价机票抢购",
+         "discout": "5.0",
+         "imageList": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+         ],
+         "id": "asdf",
+         "imagePath": "http://112.74.166.59:5000/public/download/1616941007514",
+         "name": "同芙美容连锁",
+         "commonNum": "2800评论",
+         "score": 4.0,
+         "selNum": 100,
+         "commentNum": 2000,
+         "marketPrice": 2000,
+         "dis": "2.0公里",
+         "price": "1980起",
+         "discountlist": [
+            "新用户减100",
+            "满100减50"
+         ],
+        "sub": [
+            {
+                "id": "123",
+                "name": "sdf",
+                "price": 100
+            }
+        ],
+         "tagName": "项目",
+         "taglist": [
+            "日常护理",
+            "医学美容",
+            "面部补水"
+         ]
+      }},
+
+```
+
+
 
 ```
 "footer-3": {
@@ -456,14 +505,9 @@
 }
 ```
 # Search Cell Style
-## cell-1
-![](cell1.png)
+## 与home-footer保持一致 （footer-1,footer-2...）
 
-## cell-2
-![](cell2.png)
-
-## cell-3
-![](cell3.png)
+![](./cell-3.png)
 
 ### 特别注意：
 1.搜索商店时候：
