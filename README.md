@@ -1,4 +1,142 @@
 #同芙三期设计文档：
+
+## 接口文档补充
+# 该文档十分重要！！！请每个字都读一读！
+#!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+
+
+* category/home-footer (首页footer更新接口)
+
+```
+id    - footer{tags(这个id),data{tags(不是这个)}} footer的大分类section
+subid - footer{tags(不是这个),data{tags(是这个)}} footer的小分类例如：理我最近，口碑最好，等
+
+```
+
+* category/productRecommend 推荐通用接口，支持推荐商店！推荐商品
+
+```
+productid - 商品id
+shopid		- 商店id
+```
+
+---
+* category/searchshop
+* category/searchpro
+
+```
+categoryid -- 首页传进来
+sortid		 -- 排序id
+keyword	 -- (全部，东南亚，等关键字)
+tagidlist  -- 筛选 筛选里面的tagSort里面的id集合,兼容一个类别里面选择多个的情况[{'1':['1','2']},{'2':['1','2']}]
+```
+
+---
+
+* category/service/list 预约列表
+
+```
+type:  (全部默认)APPOINT_ALL, 
+		(预约到店)SERVICE_OFFLINE, 
+		(已经)SERVICE_FINSH, 
+		(取消)SERVICE_CANCEL"
+
+```
+
+* category/pay/totalAmountInfo 计算总价格
+
+```
+goodsList:[{ 商店id:
+[{'id':商品id, 'num':'商品数量'，'attrubuteId':'可以为空'}]}]"		
+#todo 前端
+travelInfo:"[{ 商店id:[{'id':商品id, 
+							'num_adult':'成人数量', 
+							'num_child':'小孩数量'，
+							'attrubuteId':'serviceid',
+							'day':7,
+							'month':6,
+							'year':2021}]}]"
+```
+
+* category/service/schedule 获取可预约日期(专家/顾问/机构/医院)
+
+```
+shopid    -- 机构/医院 id
+expertid	-- 专家/顾问 id
+schedule  -- 获取当前日期，如： 7-11
+```
+
+* category/shop/travelDest 目的地接口
+
+```
+areaid -- areaid 定位可选id
+city   -- 城市名字 比如中山，珠海
+```
+
+* category/shop/travelUpdate 目的地推荐tags切换后的数据
+
+![](tags-travel.png)
+
+---
+
+* category/shop/appoint   商店预约
+* category/expert/appoint 专家预约 
+
+```
+action: edit,confirm,delete,cancel
+appointid : 有就传，当他是confirm的时候，需要传
+day: 预约具体日期，如 5-11
+time: am/pm 可以为空
+timeQuantum: 具体时间：9:00,9:30
+```
+---
+
+* category/shopcar/add 添加商品到购物车
+
+```
+product_list:"[{ 商店id:[{'id':商品id, 'num':'商品数量'，'attrubuteId':'sdf'}]}]"
+#todo 前端
+travelInfo:"[{ 商店id:[{'id':商品id, 
+							'num_adult':'成人数量', 
+							'num_child':'小孩数量'，
+							'attrubuteId':'serviceid',
+							'day':7,
+							'month':6,
+							'year':2021}]}]"
+```
+
+* category/shopcar/delete 移除购物车的商品
+
+```
+当数量=-1,删掉该商品下的所有数量
+product_list:"[{ 商店id:[{'id':商品id, 'num':'商品数量'，'attrubuteId':'sdf'}]}]"
+```
+
+* category/pay/createorder 创建订单 结算订单,当且仅当travel的时候，输入travelInfo
+
+```
+goodsList:"[{ 商店id:[{'id':商品id, 'num':'商品数量'，'attrubuteId':'sdf'}]}]"
+#todo 前端
+travelInfo:"[{ 商店id:[{'id':商品id, 
+							'num_adult':'成人数量', 
+							'num_child':'小孩数量'，
+							'attrubuteId':'serviceid',
+							'day':7,
+							'month':6,
+							'year':2021}]}]"
+```
+
+* category/pay/orderAction 订单操作
+
+```
+actionType:  del,cancel
+```
+
+* category/message/taglist 进入im的时候的快速点击tag
+
+
+## 首页说明
+
 ![](first-level.png)
 
 ### 总体来说分为三部分:
@@ -332,8 +470,7 @@
 #### footer-5 (带头像)
 ![](footer-2.png)
 
-#### footer-6 (带头像)
-![](cell3.png)
+
 
 
 ```
