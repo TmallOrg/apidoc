@@ -35,6 +35,7 @@
 * CATEGORY_TRAVEL_PRO_DETAIL (旅游养老-服务)
 * CATEGORY_TRAVEL_SHOP_DETAIL (旅游养老-机构)
 * CATEGORY_TRAVEL_EXPERT_DETAIL (旅游养老-专家详情)
+* CATEGORY_TRAVEL_DEST_DETAIL (旅游养老-目的地详情)
 
 * CATEGORY_COMMUNITY_PRO_DETAIL (农业生鲜)
 * CATEGORY_COMMUNITY_SHOP_DETAIL (农业生鲜)
@@ -90,6 +91,9 @@
 
 #### category-9 (无限右滑+分类)
 ![](category-9.png)
+
+#### category-tabs-1 (待分类)
+![](category-tabs-1.jpg)
 
 ```
 
@@ -307,6 +311,8 @@
     }
 }
 ```
+
+
 
 ### footer:
 #### footer-1 (带tag-cell-tag)
