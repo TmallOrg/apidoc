@@ -4,6 +4,119 @@
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
 
+### 可配置页面说明
+
+*  category/searchType
+
+```
+searchshop/searchproduct 可以支持footer的选项！！！
+头部选项可支持：如全部项目，深层清洁，保湿补水
+"category-style": 
+"image", // 图片 + 文字
+"text", //文字
+```
+![](search-1.png)
+
+* /category/shopDetail
+
+```
+支持4种样式
+type：
+type_video
+type_html
+type_expert
+type_image
+
+按需要在接口上面扩展数据
+
+数据结构:
+{
+    "title": "视频介绍",
+    "type": "type_video",
+    "list": [
+        {
+            "id": "asdfaefasdfasdf",
+            "url": "http://www.baidu.com",
+            "imagePath": "http://112.74.166.59:5000/public/download/1616941007514",
+            "visNum": "20",
+            "timeDis": "4:00"
+        }
+    ]
+},
+    {
+        "title": "详细介绍",
+        "type": "type_html",
+        "list": [
+            "<html>asdf</html>"
+        ]
+    },
+    {
+        "title": "医生介绍",
+        "type": "type_expert",
+        "list": [
+            {
+                "id": "10",
+                "name": "王蓉",
+                "chatid": "asdfdfe",
+                "title": "主任医师",
+                "desp": "50年工作经验",
+                "colNum": 12345,
+                "score": 4.0,
+                "content": "服务态度特别好，产品质量可以保障。做完皮肤效果也不错，值得推荐。服务态度特别好，产品质量可以保障",
+                "skilltags": [
+                    "以色列",
+                    "阿廖秋",
+                    "土耳其"
+                ],
+                "serviceNum": 2600,
+                "consultNum": 2600,
+                "proNum": 2600,
+                "cert": "同芙旅游养老机构旅游顾问",
+                "imageList": [
+                    "http://112.74.166.59:5000/public/download/16177227781png",
+                    "http://112.74.166.59:5000/public/download/16177227781png"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "图片介绍",
+        "type": "type_image",
+        "list": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ]
+    }
+```
+
+![](shopdetail.png)
+
+-----
+
+* category/product
+
+中间商品选项可以按需添加
+
+```
+detaillist可以无限增加，content主要存放html
+...
+shop:{
+detaillist:[
+{
+     "title": "课程详情",
+     "content": "<html>sdfasdfwef</html>"
+  },
+]
+}
+...
+
+```
+
+![](product-detail.png)
+
+### 接口说明
+
 
 * category/home-footer (首页footer更新接口)
 
