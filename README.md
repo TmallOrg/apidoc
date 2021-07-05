@@ -4,7 +4,20 @@
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
 
+
 ### 可配置页面说明
+
+*  category/more  // 显示更多，且跳到列表
+
+![](category-10.png)
+
+*  category/subsection  // 品质机构tag更新列表
+
+![](category-tabs-1.jpg)
+
+```
+点击tag更新
+```
 
 *  category/searchType
 
@@ -249,6 +262,8 @@ actionType:  del,cancel
 
 
 ## 首页说明
+
+## isMore 字段，是展示更多列表
 
 ![](first-level.png)
 
