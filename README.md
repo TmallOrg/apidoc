@@ -564,6 +564,12 @@ actionType:  del,cancel
 ```
 
 
+```
+category-10 旅游热门推荐（无限右滑）
+```
+![](category-10.png)
+
+
 
 ### footer:
 #### footer-1 (带tag-cell-tag)
