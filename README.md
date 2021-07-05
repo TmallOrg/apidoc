@@ -160,7 +160,7 @@ actionType:  del,cancel
 ![](body-4.png)
 ![](body-5.png)
 
-## navi_type(首页共用，body,footer):
+## nav_type(首页共用，body,footer):
 ```
 * CATEGORY_COS_PRO_DETAIL (健康美容-商品详情)
 * CATEGORY_COS_SHOP_DETAIL (健康美容-商店详情)
