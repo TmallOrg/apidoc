@@ -4,6 +4,11 @@
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
 
+### 0708
+
+首页样式 新增 category-travel-1
+
+![](category-10.png)
 
 ### 可配置页面说明
 
@@ -131,7 +136,9 @@ detaillist:[
 ### 接口说明
 
 
+#### 当subid不传，或为空，则默认传第一个tag的数据，前端将会默认选中第一个tag!!!
 * category/home-footer (首页footer更新接口)
+
 
 ```
 id    - footer{tags(这个id),data{tags(不是这个)}} footer的大分类section
