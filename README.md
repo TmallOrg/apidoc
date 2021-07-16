@@ -3,6 +3,8 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+### 0716 
+新增首页跳转 type_more
 
 ### 0708
 
@@ -322,6 +324,7 @@ actionType:  del,cancel
 * type_living (跳转到直播)
 * type_video (跳转到视频)
 * type_url (跳转到url)
+* type_more (跳转更多列表)
 ```
 ### body细分样式：
 ### list:[productDetail]
