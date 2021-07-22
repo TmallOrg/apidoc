@@ -3,9 +3,144 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+### 0716 
+新增首页跳转 type_more
+
+### 0708
+
+首页样式 新增 category-travel-1
+
+![](category-10.png)
+
+### 可配置页面说明
+
+*  category/more  // 显示更多，且跳到列表
+
+![](category-10.png)
+
+*  category/subsection  // 品质机构tag更新列表
+
+![](category-tabs-1.jpg)
+
+```
+点击tag更新
+```
+
+*  category/searchType
+
+```
+searchshop/searchproduct 可以支持footer的选项！！！
+头部选项可支持：如全部项目，深层清洁，保湿补水
+"category-style": 
+"image", // 图片 + 文字
+"text", //文字
+```
+![](search-1.png)
+
+* /category/shopDetail
+
+```
+支持4种样式
+type：
+type_video
+type_html
+type_expert
+type_image
+
+按需要在接口上面扩展数据
+
+数据结构:
+{
+    "title": "视频介绍",
+    "type": "type_video",
+    "list": [
+        {
+            "id": "asdfaefasdfasdf",
+            "url": "http://www.baidu.com",
+            "imagePath": "http://112.74.166.59:5000/public/download/1616941007514",
+            "visNum": "20",
+            "timeDis": "4:00"
+        }
+    ]
+},
+    {
+        "title": "详细介绍",
+        "type": "type_html",
+        "list": [
+            "<html>asdf</html>"
+        ]
+    },
+    {
+        "title": "医生介绍",
+        "type": "type_expert",
+        "list": [
+            {
+                "id": "10",
+                "name": "王蓉",
+                "chatid": "asdfdfe",
+                "title": "主任医师",
+                "desp": "50年工作经验",
+                "colNum": 12345,
+                "score": 4.0,
+                "content": "服务态度特别好，产品质量可以保障。做完皮肤效果也不错，值得推荐。服务态度特别好，产品质量可以保障",
+                "skilltags": [
+                    "以色列",
+                    "阿廖秋",
+                    "土耳其"
+                ],
+                "serviceNum": 2600,
+                "consultNum": 2600,
+                "proNum": 2600,
+                "cert": "同芙旅游养老机构旅游顾问",
+                "imageList": [
+                    "http://112.74.166.59:5000/public/download/16177227781png",
+                    "http://112.74.166.59:5000/public/download/16177227781png"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "图片介绍",
+        "type": "type_image",
+        "list": [
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514",
+            "http://112.74.166.59:5000/public/download/1616941007514"
+        ]
+    }
+```
+
+![](shopdetail.png)
+
+-----
+
+* category/product
+
+中间商品选项可以按需添加
+
+```
+detaillist可以无限增加，content主要存放html
+...
+shop:{
+detaillist:[
+{
+     "title": "课程详情",
+     "content": "<html>sdfasdfwef</html>"
+  },
+]
+}
+...
+
+```
+
+![](product-detail.png)
+
+### 接口说明
 
 
+#### 当subid不传，或为空，则默认传第一个tag的数据，前端将会默认选中第一个tag!!!
 * category/home-footer (首页footer更新接口)
+
 
 ```
 id    - footer{tags(这个id),data{tags(不是这个)}} footer的大分类section
@@ -137,6 +272,8 @@ actionType:  del,cancel
 
 ## 首页说明
 
+## isMore 字段，是展示更多列表
+
 ![](first-level.png)
 
 ### 总体来说分为三部分:
@@ -160,7 +297,7 @@ actionType:  del,cancel
 ![](body-4.png)
 ![](body-5.png)
 
-## navi_type(首页共用，body,footer):
+## nav_type(首页共用，body,footer):
 ```
 * CATEGORY_COS_PRO_DETAIL (健康美容-商品详情)
 * CATEGORY_COS_SHOP_DETAIL (健康美容-商店详情)
@@ -187,6 +324,7 @@ actionType:  del,cancel
 * type_living (跳转到直播)
 * type_video (跳转到视频)
 * type_url (跳转到url)
+* type_more (跳转更多列表)
 ```
 ### body细分样式：
 ### list:[productDetail]
@@ -449,6 +587,12 @@ actionType:  del,cancel
     }
 }
 ```
+
+
+```
+category-10 旅游热门推荐（无限右滑）
+```
+![](category-10.png)
 
 
 
