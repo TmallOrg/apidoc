@@ -182,7 +182,7 @@ actionType:  del,cancel
 * CATEGORY_MEDICAL_SHOP_DETAIL  (医疗抗衰-机构)
 * CATEGORY_MEDICAL_EXPERT_DETAIL  (医疗抗衰-专家详情)
 
-* CATEGORY_LIVING (视频直播)
+
 * type_eShop (网上商城)
 * type_living (跳转到直播)
 * type_video (跳转到视频)
