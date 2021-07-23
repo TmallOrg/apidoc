@@ -320,6 +320,9 @@ kbd {
 	pre {
 		word-wrap: break-word;
 	}
+  body {
+    padding: 2cm; 
+  }
 }
 </style>
 
@@ -336,17 +339,95 @@ kbd {
 
 <h1 id="toc_3">!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了</h1>
 
-<h3 id="toc_4">0716</h3>
+<h3 id="toc_4">0723</h3>
+
+<h4 id="toc_5">/tf/category/pay/baseInfo 确认订单基本信息：</h4>
+
+<p>传参：
+修改点：新增</p>
+
+<div><pre><code class="language-none">泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT</code></pre></div>
+
+<h2 id="toc_6">返回值不变</h2>
+
+<h4 id="toc_7">/tf/category/service/schedule 获取可预约日期</h4>
+
+<p>传参：
+修改点：新增</p>
+
+<div><pre><code class="language-none">泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT</code></pre></div>
+
+<h2 id="toc_8">返回值不变</h2>
+
+<h4 id="toc_9">/tf/category/shop</h4>
+
+<p>传参：
+修改点：新增</p>
+
+<div><pre><code class="language-none">泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT</code></pre></div>
+
+<h2 id="toc_10">返回值不变</h2>
+
+<h4 id="toc_11">/tf/category/service/list 预约中心</h4>
+
+<h5 id="toc_12">传参 :</h5>
+
+<p>修改点：原来的type,改为appoint_type</p>
+
+<div><pre><code class="language-none">appoint_type:
+(全部默认)APPOINT_ALL, 
+(预约到店)SERVICE_OFFLINE, 
+(已经完成)SERVICE_FINSH, 
+(取消)SERVICE_CANCEL
+</code></pre></div>
+
+<p>返回值：
+修改点：原来的shop，改为detail,新增type字段。</p>
+
+<div><pre><code class="language-none">type支持：
+
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT
+example:
+[
+{
+    &quot;type&quot;:&quot;APPOINT_TYPE_EXPERT&quot;,
+    &quot;detail&quot;:{
+        &quot;id&quot;:&quot;123123&quot;, //泛型id: 支持商店id,专家id,商品id
+        &quot;name&quot;: &quot;同福健康美容会有点&quot;
+    },
+    &quot;appoint&quot;:{
+        &quot;commit_date&quot;: &quot;2021-01-21 8:00&quot;,
+        &quot;book_date&quot;:&quot;2021-01-21 8:00&quot;,
+        &quot;finish_date&quot;: &quot;2021-01-21 8:00&quot;,
+        &quot;status&quot;:&quot;SERVICE_FINSH&quot;
+    }
+}
+]</code></pre></div>
+
+<h3 id="toc_13">0716</h3>
 
 <p>新增首页跳转 type_more</p>
 
-<h3 id="toc_5">0708</h3>
+<h3 id="toc_14">0708</h3>
 
 <p>首页样式 新增 category-travel-1</p>
 
 <p><img src="category-10.png" alt=""></p>
 
-<h3 id="toc_6">可配置页面说明</h3>
+<h3 id="toc_15">可配置页面说明</h3>
 
 <ul>
 <li> category/more  // 显示更多，且跳到列表</li>
@@ -472,9 +553,9 @@ detaillist:[
 
 <p><img src="product-detail.png" alt=""></p>
 
-<h3 id="toc_7">接口说明</h3>
+<h3 id="toc_16">接口说明</h3>
 
-<h4 id="toc_8">当subid不传，或为空，则默认传第一个tag的数据，前端将会默认选中第一个tag!!!</h4>
+<h4 id="toc_17">当subid不传，或为空，则默认传第一个tag的数据，前端将会默认选中第一个tag!!!</h4>
 
 <ul>
 <li>category/home-footer (首页footer更新接口)</li>
@@ -611,13 +692,13 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
 <li>category/message/taglist 进入im的时候的快速点击tag</li>
 </ul>
 
-<h2 id="toc_9">首页说明</h2>
+<h2 id="toc_18">首页说明</h2>
 
-<h2 id="toc_10">isMore 字段，是展示更多列表</h2>
+<h2 id="toc_19">isMore 字段，是展示更多列表</h2>
 
 <p><img src="first-level.png" alt=""></p>
 
-<h3 id="toc_11">总体来说分为三部分:</h3>
+<h3 id="toc_20">总体来说分为三部分:</h3>
 
 <ol>
 <li>header (search,tag,)</li>
@@ -625,19 +706,19 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
 <li>footer (recommend)</li>
 </ol>
 
-<h3 id="toc_12">header:</h3>
+<h3 id="toc_21">header:</h3>
 
 <p><img src="header.png" alt=""></p>
 
-<h3 id="toc_13">body:</h3>
+<h3 id="toc_22">body:</h3>
 
 <p><img src="body.png" alt=""></p>
 
-<h3 id="toc_14">footer:</h3>
+<h3 id="toc_23">footer:</h3>
 
 <p><img src="footer.png" alt=""></p>
 
-<h3 id="toc_15">主要是以body作为区分，样式包括：</h3>
+<h3 id="toc_24">主要是以body作为区分，样式包括：</h3>
 
 <p><img src="body-1.png" alt="">
 <img src="body-2.png" alt="">
@@ -645,7 +726,7 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
 <img src="body-4.png" alt="">
 <img src="body-5.png" alt=""></p>
 
-<h2 id="toc_16">nav_type(首页共用，body,footer):</h2>
+<h2 id="toc_25">nav_type(首页共用，body,footer):</h2>
 
 <div><pre><code class="language-none">* CATEGORY_COS_PRO_DETAIL (健康美容-商品详情)
 * CATEGORY_COS_SHOP_DETAIL (健康美容-商店详情)
@@ -674,47 +755,47 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
 * type_url (跳转到url)
 * type_more (跳转更多列表)</code></pre></div>
 
-<h3 id="toc_17">body细分样式：</h3>
+<h3 id="toc_26">body细分样式：</h3>
 
-<h3 id="toc_18">list:[productDetail]</h3>
+<h3 id="toc_27">list:[productDetail]</h3>
 
-<h4 id="toc_19">category-1 (一长两短)</h4>
+<h4 id="toc_28">category-1 (一长两短)</h4>
 
 <p><img src="category-1.png" alt=""></p>
 
-<h4 id="toc_20">category-2 (轮训)</h4>
+<h4 id="toc_29">category-2 (轮训)</h4>
 
 <p><img src="category-2.png" alt=""></p>
 
-<h4 id="toc_21">category-3 (无限右滑)</h4>
+<h4 id="toc_30">category-3 (无限右滑)</h4>
 
 <p><img src="category-3.png" alt=""></p>
 
-<h4 id="toc_22">category-4 (两短)</h4>
+<h4 id="toc_31">category-4 (两短)</h4>
 
 <p><img src="category-4.png" alt=""></p>
 
-<h4 id="toc_23">category-5 (两短 2)</h4>
+<h4 id="toc_32">category-5 (两短 2)</h4>
 
 <p><img src="category-5.png" alt=""></p>
 
-<h4 id="toc_24">category-6 (四短-带标题)</h4>
+<h4 id="toc_33">category-6 (四短-带标题)</h4>
 
 <p><img src="category-6.png" alt=""></p>
 
-<h4 id="toc_25">category-7 (一长带标题)</h4>
+<h4 id="toc_34">category-7 (一长带标题)</h4>
 
 <p><img src="category-7.png" alt=""></p>
 
-<h4 id="toc_26">category-8 (两短-带标题)</h4>
+<h4 id="toc_35">category-8 (两短-带标题)</h4>
 
 <p><img src="category-8.png" alt=""></p>
 
-<h4 id="toc_27">category-9 (无限右滑+分类)</h4>
+<h4 id="toc_36">category-9 (无限右滑+分类)</h4>
 
 <p><img src="category-9.png" alt=""></p>
 
-<h4 id="toc_28">category-tabs-1 (待分类)</h4>
+<h4 id="toc_37">category-tabs-1 (待分类)</h4>
 
 <p><img src="category-tabs-1.jpg" alt=""></p>
 
@@ -921,25 +1002,25 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
 
 <p><img src="category-10.png" alt=""></p>
 
-<h3 id="toc_29">footer:</h3>
+<h3 id="toc_38">footer:</h3>
 
-<h4 id="toc_30">footer-1 (带tag-cell-tag)</h4>
+<h4 id="toc_39">footer-1 (带tag-cell-tag)</h4>
 
 <p><img src="footer-1.png" alt=""></p>
 
-<h4 id="toc_31">footer-2 (瀑布流)</h4>
+<h4 id="toc_40">footer-2 (瀑布流)</h4>
 
 <p><img src="footer-3.png" alt=""></p>
 
-<h4 id="toc_32">footer-3 ()</h4>
+<h4 id="toc_41">footer-3 ()</h4>
 
 <p><img src="footer-6.png" alt=""></p>
 
-<h4 id="toc_33">footer-4 (带头像)</h4>
+<h4 id="toc_42">footer-4 (带头像)</h4>
 
 <p><img src="footer-7.png" alt=""></p>
 
-<h4 id="toc_34">footer-5 (带头像)</h4>
+<h4 id="toc_43">footer-5 (带头像)</h4>
 
 <p><img src="footer-2.png" alt=""></p>
 
@@ -1106,13 +1187,13 @@ travelInfo:&quot;[{ 商店id:[{&#39;id&#39;:商品id,
     ]
 }</code></pre></div>
 
-<h1 id="toc_35">Search Cell Style</h1>
+<h1 id="toc_44">Search Cell Style</h1>
 
-<h2 id="toc_36">与home-footer保持一致 （footer-1,footer-2...）</h2>
+<h2 id="toc_45">与home-footer保持一致 （footer-1,footer-2...）</h2>
 
 <p><img src="./cell-3.png" alt=""></p>
 
-<h3 id="toc_37">特别注意：</h3>
+<h3 id="toc_46">特别注意：</h3>
 
 <p>1.搜索商店时候：
 shop 
@@ -1204,102 +1285,102 @@ category/searchshop</p>
 }
 </code></pre></div>
 
-<h1 id="toc_38">API 描述：</h1>
+<h1 id="toc_47">API 描述：</h1>
 
-<h2 id="toc_39">首页：</h2>
+<h2 id="toc_48">首页：</h2>
 
 <p><img src="first-level.png" alt="">
 <img src="home-exa.png" alt=""></p>
 
-<h3 id="toc_40">红色部分： /tf/category/home</h3>
+<h3 id="toc_49">红色部分： /tf/category/home</h3>
 
-<h3 id="toc_41">红色部分-cell 更多： /tf/category/home-category</h3>
+<h3 id="toc_50">红色部分-cell 更多： /tf/category/home-category</h3>
 
-<h3 id="toc_42">绿色部分：/tf/category/home-footer</h3>
+<h3 id="toc_51">绿色部分：/tf/category/home-footer</h3>
 
 <hr>
 
-<h2 id="toc_43">商店详情</h2>
+<h2 id="toc_52">商店详情</h2>
 
 <p><img src="shop-detail.png" alt=""></p>
 
-<h3 id="toc_44">tf/category/shop</h3>
+<h3 id="toc_53">tf/category/shop</h3>
 
 <hr>
 
-<h2 id="toc_45">机构详情</h2>
+<h2 id="toc_54">机构详情</h2>
 
 <p><img src="shop-detail-sep.png" alt=""></p>
 
-<h3 id="toc_46">/tf/category/shopDetail</h3>
+<h3 id="toc_55">/tf/category/shopDetail</h3>
 
 <hr>
 
-<h2 id="toc_47">购物车分类</h2>
+<h2 id="toc_56">购物车分类</h2>
 
 <p><img src="shop-card-all.png" alt=""></p>
 
-<h3 id="toc_48">红色部分：/tf/category/shopMenu</h3>
+<h3 id="toc_57">红色部分：/tf/category/shopMenu</h3>
 
-<h3 id="toc_49">绿色部分：/tf/category/shopAll</h3>
+<h3 id="toc_58">绿色部分：/tf/category/shopAll</h3>
 
 <hr>
 
-<h2 id="toc_50">专家详情：</h2>
+<h2 id="toc_59">专家详情：</h2>
 
 <p><img src="exp-detail.png" alt=""></p>
 
-<h3 id="toc_51">/tf/category/expert</h3>
+<h3 id="toc_60">/tf/category/expert</h3>
 
 <hr>
 
 <p><img src="pro-d.png" alt=""></p>
 
-<h3 id="toc_52">/tf/category/productDetail</h3>
+<h3 id="toc_61">/tf/category/productDetail</h3>
 
 <hr>
 
-<h2 id="toc_53">各种推荐专用接口(用于各种详情下面的推荐)</h2>
+<h2 id="toc_62">各种推荐专用接口(用于各种详情下面的推荐)</h2>
 
-<h3 id="toc_54">/tf/category/productRecommend</h3>
+<h3 id="toc_63">/tf/category/productRecommend</h3>
 
-<h2 id="toc_55">评论专用接口(用于更多评论)</h2>
+<h2 id="toc_64">评论专用接口(用于更多评论)</h2>
 
-<h3 id="toc_56">/tf/category/productCommend</h3>
+<h3 id="toc_65">/tf/category/productCommend</h3>
 
-<h2 id="toc_57">筛选</h2>
+<h2 id="toc_66">筛选</h2>
 
 <p><img src="search.png" alt=""></p>
 
 <p><img src="search-type2.png" alt=""></p>
 
-<h3 id="toc_58">/tf/category/searchType 包括排序和筛选(可多选)，头部分类（图片可以无）</h3>
+<h3 id="toc_67">/tf/category/searchType 包括排序和筛选(可多选)，头部分类（图片可以无）</h3>
 
-<h3 id="toc_59">搜索商店 /tf/category/searchshop</h3>
+<h3 id="toc_68">搜索商店 /tf/category/searchshop</h3>
 
-<h3 id="toc_60">搜索商品 /tf/category/searchshop</h3>
+<h3 id="toc_69">搜索商品 /tf/category/searchshop</h3>
 
-<h2 id="toc_61">服务</h2>
+<h2 id="toc_70">服务</h2>
 
-<h3 id="toc_62">预约服务详情 /category/service/schedule</h3>
+<h3 id="toc_71">预约服务详情 /category/service/schedule</h3>
 
-<h3 id="toc_63">schedule, list两个对应两种不同的UI, schedule的优先级会更高</h3>
+<h3 id="toc_72">schedule, list两个对应两种不同的UI, schedule的优先级会更高</h3>
 
 <div><pre><code class="language-none"> &quot;schedule&quot;:[],##当 schedule = 5-1 的时候会出现
  &quot;list&quot;:[],
  &quot;dsp&quot;:&quot;预期说声哈&quot;</code></pre></div>
 
-<h5 id="toc_64">读取 schedule 字段</h5>
+<h5 id="toc_73">读取 schedule 字段</h5>
 
 <p><img src="service-1.png" alt=""></p>
 
-<h5 id="toc_65">读取 list 字段</h5>
+<h5 id="toc_74">读取 list 字段</h5>
 
 <p><img src="service-2.png" alt=""></p>
 
 <hr>
 
-<h3 id="toc_66">我的-预约列表 /category/service/list</h3>
+<h3 id="toc_75">我的-预约列表 /category/service/list</h3>
 
 <div><pre><code class="language-none">(全部)APPOINT_ALL, 
 (预约到店)SERVICE_OFFLINE, 

@@ -3,6 +3,95 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+
+### 0723
+          
+#### /tf/category/pay/baseInfo 确认订单基本信息：
+传参：
+修改点：新增
+
+```
+泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT
+```
+返回值不变
+-----
+
+#### /tf/category/service/schedule 获取可预约日期
+传参：
+修改点：新增
+
+```
+泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT
+```
+
+返回值不变
+-----
+#### /tf/category/shop
+传参：
+修改点：新增
+
+```
+泛型id: did, 支持商店id,专家id,商品id
+预约类型：appoint_type:
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT
+```
+
+返回值不变
+----
+
+####
+
+#### /tf/category/service/list 预约中心
+
+##### 传参 :
+
+修改点：原来的type,改为appoint_type
+
+```
+appoint_type:
+(全部默认)APPOINT_ALL, 
+(预约到店)SERVICE_OFFLINE, 
+(已经完成)SERVICE_FINSH, 
+(取消)SERVICE_CANCEL
+
+```
+返回值：
+修改点：原来的shop，改为detail,新增type字段。
+
+```
+type支持：
+
+专家：APPOINT_TYPE_EXPERT， 
+商店：APPOINT_TYPE_SHOP, 
+商品：APPOINT_TYPE_PRODUCT
+example:
+[
+{
+	"type":"APPOINT_TYPE_EXPERT",
+	"detail":{
+		"id":"123123", //泛型id: 支持商店id,专家id,商品id
+		"name": "同福健康美容会有点"
+	},
+	"appoint":{
+		"commit_date": "2021-01-21 8:00",
+		"book_date":"2021-01-21 8:00",
+		"finish_date": "2021-01-21 8:00",
+		"status":"SERVICE_FINSH"
+	}
+}
+]
+```
+
+
 ### 0716 
 新增首页跳转 type_more
 
