@@ -3,6 +3,9 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+### 0727
+
+#### body 新增type
 
 ### 0723
           
@@ -453,235 +456,33 @@ actionType:  del,cancel
 ![](category-8.png)
 
 
-
 #### category-9 (无限右滑+分类)
 ![](category-9.png)
 
-#### category-tabs-1 (待分类)
+
+#### category-10 热门推荐（无限右滑）
+![](category-10.png)
+
+#### category-tabs-1 (品质机构无限右滑)
 ![](category-tabs-1.jpg)
 
-```
-
-    "category-1": {
-        "nav_type": "CATEGORY_EDU_PRO_DETAIL",
-        "title": "国际形象设计名师班",
-        "discout": "",
-        "id": "1",
-        "name": "国际形象设计名师班",
-        "score": 4.0,
-        "selNum": 100,
-        "price": 1980,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [
-            "课程形式：小班授课",
-            "适用阶段:宁基础入门"
-        ],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514"
-        ]
-    },
-```
-
-```
-    "category-2": {
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL",
-        "id": "asdf",
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1621173621200"
-        ],
-        "url": "http://www.baidu.com"
-    },
-```
-
-```
-    "category-3": {
-        "id": "asdfaefasdfasdf",
-        "name": "0基础培训课程",
-        "score": 4.0,
-        "selNum": 100,
-        "price": 1980,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [
-            "课程形式：小班授课",
-            "适用阶段:宁基础入门"
-        ],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    }
-
-```
-
-```
-    "category-4": {
-        "nav_type": "type_url",
-        "id": "1",
-        "imagePath": "http://112.74.166.59:5000/public/download/1621170599309",
-        "url": "http://www.baidu.com"
-    },
-```
-
-```
-    "category-5": {
-        "title": "特价机票抢购",
-        "discout": "5.0",
-        "id": "asdfaefasdfasdf",
-        "name": "0基础培训课程",
-        "score": 4.0,
-        "selNum": 100,
-        "price": 1980,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [
-            "课程形式：小班授课",
-            "适用阶段:宁基础入门"
-        ],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    },
-    
-```
-
-```
-    "category-6": {
-        "title": "特价机票抢购",
-        "discout": "5.0",
-        "id": "asdfaefasdfasdf",
-        "name": "0基础培训课程",
-        "score": 4.0,
-        "selNum": 100,
-        "price": 1980,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [
-            "课程形式：小班授课",
-            "适用阶段:宁基础入门"
-        ],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    },
-    
-```
-
-```
-    "category-7": {
-        "videoList": [
-            {
-                "id": "1",
-                "url": "http://112.74.166.59:5000/public/video/test.MP4",
-                "visNum": "20",
-                "timeDis": "4:00"
-            }
-        ],
-        "title": "大品牌春季套装试穿直播回放，优雅新美学",
-        "discout": "5.0",
-        "id": "1",
-        "name": "大品牌春季套装试穿",
-        "score": 0.0,
-        "selNum": 0,
-        "price": 0,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1621125217128"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    }
-```
-
-```
-    "category-8": {
-        "videoList": [
-            {
-                "id": "1",
-                "url": "http://112.74.166.59:5000/public/video/test.MP4",
-                "visNum": "20",
-                "timeDis": "4:00"
-            }
-        ],
-        "title": "大品牌春季套装试穿直播回放，优雅新美学",
-        "discout": "5.0",
-        "id": "1",
-        "name": "大品牌春季套装试穿",
-        "score": 0.0,
-        "selNum": 0,
-        "price": 0,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1621125217128"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    }
-
-```
-
-```
-    "category-9": {
-        "videoList": [
-            {
-                "id": "asdfaefasdfasdf",
-                "url": "http://www.baidu.com",
-                "visNum": "20",
-                "timeDis": "4:00"
-            },
-            {
-                "id": "asdfaefasdfasdf",
-                "url": "http://www.baidu.com",
-                "visNum": "20",
-                "timeDis": "4:00"
-            }
-        ],
-        "title": "特价机票抢购",
-        "discout": "5.0",
-        "id": "asdfaefasdfasdf",
-        "name": "0基础培训课程",
-        "score": 4.0,
-        "selNum": 100,
-        "price": 1980,
-        "commentNum": 2000,
-        "marketPrice": 2000,
-        "desp": [
-            "课程形式：小班授课",
-            "适用阶段:宁基础入门"
-        ],
-        "imageList": [
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514",
-            "http://112.74.166.59:5000/public/download/1616941007514"
-        ],
-        "nav_type": "CATEGORY_MEDICAL_PRO_DETAIL"
-    }
-}
-```
-
-
-```
-category-10 旅游热门推荐（无限右滑）
-```
+#### category-travel-1 旅游热门推荐（无限右滑）
 ![](category-10.png)
+
+---- 
+
+## 只有在目的地才能使用
+
+####  category-11(目的地 特色体验-无限右滑)
+![](category-11.png)
+
+#### category-12 (目的地 特色体验-无限右滑)
+![](category-12.png)
+
+
+----
+
+
 
 
 
