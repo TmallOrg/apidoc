@@ -5,6 +5,25 @@
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
 
 ### 0811
+##新增 url:
+---
+
+### 当且仅当  【收藏列表】 和 【关注列表】是用，其他模块不使用
+
+#### /user/collist 收藏列表
+``` 负责跳转到老的模块
+nav_type eshop_col 
+
+```
+
+#### /user/followlist 关注列表
+
+``` 负责跳转到老的模块
+nav_type eshop_follow 
+
+```
+
+---
 
 #### /tf/category/service/list 预约中心
 
