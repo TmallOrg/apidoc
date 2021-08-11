@@ -3,6 +3,23 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+
+### 0811
+
+#### /tf/category/service/list 预约中心
+
+##### 传参 :
+
+修改点：(待预约)SERVICE_WAITTING, 
+
+```
+appoint_type:
+(全部默认)APPOINT_ALL, 
+(预约到店)SERVICE_OFFLINE, 
+(待预约)SERVICE_WAITTING, 
+(已经完成)SERVICE_FINSH, 
+(取消)SERVICE_CANCEL
+
 ### 0808
 
 #### /tf/category/more:
