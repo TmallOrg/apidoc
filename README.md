@@ -3,6 +3,10 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+### 0823
+##新增目的地跳转type:
+* type_strategyList (目的地->跳转攻略列表)
+
 
 ### 0811
 ##新增 url:
@@ -470,6 +474,7 @@ actionType:  del,cancel
 * type_video (跳转到视频)
 * type_url (跳转到url)
 * type_more (跳转更多列表)
+* type_strategyList (目的地->跳转攻略列表)
 ```
 ### body细分样式：
 ### list:[productDetail]
