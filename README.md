@@ -3,6 +3,14 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+### 0905
+* 首页新增 
+
+#### category-13 (热门榜单)
+![](category-13.png)
+
+
+
 ### 0823
 ##新增目的地跳转type:
 * type_strategyList (目的地->跳转攻略列表)
@@ -537,10 +545,10 @@ actionType:  del,cancel
 #### category-12 (目的地 特色体验-无限右滑)
 ![](category-12.png)
 
-
 ----
 
-
+#### category-13 (热门榜单)
+![](category-13.png)
 
 
 
