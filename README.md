@@ -3,6 +3,35 @@
 ## 接口文档补充
 # 该文档十分重要！！！请每个字都读一读！
 #!!! header中存放 type:分类，longitude:经度, latitude:纬度 有时候可能回放header，可能会放body，但是只认header的参数就好了
+
+### 0911
+#### /tf/category/more:
+
+传参：
+修改点：新增
+
+```
+moretype
+支持 expert,
+shop,
+product,
+home,
+dest(本次新增)
+
+moretype说明是哪个页面跳进来more的
+```
+
+补充说明：CATEGORY_TYPE
+
+```
+CATEGORY_MEDICAL:"医美",
+CATEGORY_TRAVEL:"旅游",
+CATEGORY_COS:"美容",
+CATEGORY_COMMUNITY:"社区团购",
+CATEGORY_EDU:"教育",
+CATEGORY_LIVING :"直播"
+```
+
 ### 0905
 * 首页新增 
 
@@ -63,7 +92,8 @@ moretype
 支持 expert,
 shop,
 product,
-home
+home,
+dest
 
 moretype说明是哪个页面跳进来more的
 ```
